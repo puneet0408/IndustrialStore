@@ -1,0 +1,171 @@
+
+.contactPage{
+  margin-top: 4rem;
+    height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inTouch{
+  color:#fff ;
+  text-transform: capitalize;
+  font-size: 2rem;
+  padding: .5rem;
+  }
+  .contactForm{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right, #14505c, 	#207f92);
+     border-radius: 2rem;
+}
+
+    form button{
+      padding: 1.5rem;
+      background:  var(--btnColor);
+      color: #fff;
+      font-size: 1.8rem;
+      cursor: pointer;
+      width: 15rem;
+      margin: 2rem auto 0;
+      border-radius: 3rem;
+    }
+    .Name  .Contact{
+      display:flex;
+      flex-direction: row;
+    }
+    .name , .cont , .address ,.Comment {
+    background-color:#fff;
+    margin:.5rem;
+    padding:  2.5rem;
+    color:var(--btnColor);
+    border-radius: 10px;
+    }
+ .address{
+  padding: 3rem;
+ }
+ .Comment{
+  padding: 4rem;
+  resize: none;
+ }
+
+ .map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  width: 50%;
+  height: 60%;
+}
+
+
+
+.info-map {
+  position: absolute;
+  background: #000;
+  top: 10%;
+  right: 30%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.emailBox{
+  font-size: 16px;
+  display: block;
+  padding-top: 20px;
+  color:var(--helper-tint);
+}
+
+.leaflet-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+ 
+  @media(max-width:1024px){
+  .name , .cont , .address ,.Comment {
+    margin: 0.2em;
+    padding: 1rem;
+    }
+
+ .address{
+  padding: 1rem;
+ }
+
+ 
+ .Comment{
+  padding: 1rem;
+  resize: none;
+ }
+  }
+
+
+  @media (max-width: 820px) {
+ 
+    .contactForm{
+     padding: 1rem;
+    }
+    .map-wrap {
+      width: 40%;
+      height: 50%;
+       }
+   }
+
+@media(max-width:650px){
+  .contactPage{
+    margin-top: 6rem;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+}
+
+.contactForm{
+  margin: 4rem 0;
+ }
+.map-wrap {
+  width: 60%;
+  height: 50%;
+  margin-top: 14rem;
+   }
+   .info-map{
+    display: none;
+ 
+   }
+}
+
+ 
+
+
+@media(max-width:425px){
+
+  .contactForm{
+    width: 80%;
+  }
+ 
+  .Name  .Contact{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+ 
+  .name , .cont{
+    width: 91%;
+  }
+ 
+
+ }

@@ -1,0 +1,105 @@
+ 
+ .mainfoot{
+  display: flex;
+   height: 100vh;
+ }
+
+
+ .aboutHeading{
+  display: none;
+ }
+
+.footer{
+display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-content: center;
+ align-items: center;
+ margin-top: 5rem;
+ 
+}
+
+.aboutCo{
+  width: 80%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+
+.aboutCompany{
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--mainBg);
+  text-transform: capitalize;
+}
+.exp{
+ font: 3.5rem sans-serif;
+}
+
+.abouttxt{
+  margin-top: 1rem;
+  font: 2rem sans-serif;
+  width: 100%;
+}
+
+ .img1{
+  width: 80%;
+  position: relative;
+  z-index: -1;
+ margin-left: 8rem;
+ margin-top: 3rem;
+ height: 50%;
+ }
+
+  .btn{
+    padding: 1.5rem;
+    background:var(--btnColor);
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    text-align: center;
+  }
+
+
+
+@media(max-width:700px){
+  .aboutCompany{
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  .workers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img1{
+    width: 60%;
+    position: relative;
+    z-index: -1;
+   margin-left: .5rem;
+   margin-top: 3rem;
+   height: 40%;
+   }
+  .footer{
+     display: grid;
+     grid-template-columns:1fr;
+     align-items: center;
+     justify-content: center;
+     place-items: center;
+    }
+    .aboutCo{
+      margin-left: 1rem;
+      width: 80%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .abouttxt{
+      width: 100%;
+    }
+  }

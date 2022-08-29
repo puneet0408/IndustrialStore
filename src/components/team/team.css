@@ -1,0 +1,46 @@
+.team-page{
+ margin-top: 7rem;
+ margin-bottom: 19rem;
+}
+.team-heading {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+
+.Members {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.memberCard {
+  box-shadow:var(--shadow);
+  border: 1px solid rgb(169,169,169);
+  border-radius: 0.5rem;
+  height: 35rem;
+  width: 24rem;
+  position: relative;
+}
+
+.memberCard img {
+  height: 24rem;
+  object-fit: cover;
+}
+
+.memberName{
+  font-size: large;
+  text-transform: uppercase;
+}
+
+ .memberPost{
+  text-align: center;
+  text-transform: capitalize;
+  color:var(--gradientSuport) ;
+  font-size: 2.5rem;
+ }

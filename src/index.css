@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+font-family: 'Work Sans' , sans-serif;
+}
+
+:root{
+  --mainBg:#12192b
+  --para: #fff;
+  --para-tint:#e4e4e4;
+  --white:#fff;
+  --helper-tint:#8490ff;
+  --bg:rgb(249 249 255);
+  --gradient:linear-gradient ( 0deg, rgb(132 144 255)0%, rgb(98 189 252) 100% );
+  --gradientSuport:-webkit-linear-gradient( 0deg, rgb(132 144 255)0%, rgb(98 189 252) 100% );
+--shadow: inset 0px 0px 20px 0px rgb(132 144 255/20%);
+--btnColor:#001660;
+}
+
+h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p{
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+ background-color:transparent;
+ box-shadow: inset 0 0 6px rgb(0,0,0,0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+  min-height: 5px;
+    background: rgb(136, 136, 136);
+    border-radius: 10px;
+  }
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+    border-radius: 10px;
+  }
+
+*::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+  }
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1024px) {
+    html{
+        font-size: 55%;
+    }
+     }
+
+     @media (max-width: 768px) {
+        html{
+            font-size: 50%;
+        }
+         }

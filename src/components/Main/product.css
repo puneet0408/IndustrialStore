@@ -1,0 +1,55 @@
+
+.productsinfo{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.productHeading{
+  text-transform: uppercase;
+  margin: 2rem;
+
+}
+
+.mainCard {
+ width:74vw;
+ display: flex;
+ overflow-x: scroll;
+  }
+
+ 
+  .mainCard::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+  }
+   
+  .cardData {
+    object-fit: cover;
+    display: flex;
+    white-space:nowrap;
+  }
+  
+  .cardData img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+
+   
+  
+  .productMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+
+    .each-card{
+      margin: 2rem;
+      box-shadow: inset 0 -3em 3em rgba(16, 9, 9, 0.1), 0 0 0 2px rgb(208, 198, 198),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+    }
+ 

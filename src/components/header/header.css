@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 464;
+  width: 100%;
+  justify-content: space-between;
+}
+.scrollBar {
+  background-color: #000;
+  box-shadow: (-1px 0 4px rgba(44, 110, 154, 0.15));
+}
+
+a.nav__link.active {
+  color: red;
+}
+.logo {
+  margin: 1rem 0;
+  margin-left: 2rem;
+  height: 6.3rem;
+  width: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2rem;
+}
+.nav__link {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: var(--mainBg);
+  margin-left: 3rem;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+.Scrollactive {
+  color: #fff;
+}
+.nav__item .nav__link.Scrollactive,
+.nav__item .nav__link:hover {
+  background: #c5a731;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.mobileView-Icon {
+  display: none;
+}
+@media (max-width: 700px) {
+  .nav__list {
+    display: none;
+  }
+
+  .nav__menu {
+    position: fixed;
+    background-color: #222;
+    top: 10%;
+    right: 0;
+    list-style: none;
+    transition: all 0.5s ease-out;
+    z-index: 4;
+  }
+  .nav__menu a {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 0.5rem;
+    color: #222;
+    font-weight: 600;
+  }
+
+  .mobileView-Icon {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 3rem;
+
+    position: fixed;
+    z-index: 3343;
+    right: 2rem;
+  }
+}
