@@ -6,10 +6,6 @@ import "./product.css";
 function Product() {
   const [cardMain] = useState(cardData);
 
- 
-
- 
-
   const card = cardMain.map((item) => {
     const { Img, Machine } = item;
     return (

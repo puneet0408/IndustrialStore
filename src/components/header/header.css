@@ -78,12 +78,14 @@ a.nav__link.active {
 
   .mobileView-Icon {
     display: block;
-    font-size: 3rem;
-    color: #fff;
+    font-size: 4rem;
+    color: #000;
     margin-top: 3rem;
-
     position: fixed;
     z-index: 3343;
     right: 2rem;
+  }
+  .mobileView-Icon-scroll{
+ color: #fff;
   }
 }

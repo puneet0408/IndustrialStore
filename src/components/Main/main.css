@@ -21,7 +21,7 @@ width: 100vw;
 object-fit:cover;
 transition: all ease-in;
 transition-timing-function: linear;
-
+opacity: .9;
 }
 article {
   position: absolute;
@@ -67,7 +67,7 @@ article {
 .Main-text{
   text-align: center;
     text-transform:capitalize;
-    color: #fff;
+    color: #333;
     font-size: 3rem;
     margin-bottom: 15rem;
 }

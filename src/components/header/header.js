@@ -42,7 +42,7 @@ export default function Nav() {
               About
             </NavLink>
           </ul>
-          <div className="mobileView-Icon" id="nav-toggle" onClick={toggle}>
+          <div className={navLinksChangeonScroll ? "mobileView-Icon mobileView-Icon-scroll " : "mobileView-Icon"} id="nav-toggle" onClick={toggle}>
             {navBgChangeOnScroll ? (
               <i class="ri-close-circle-line"></i>
             ) : (
