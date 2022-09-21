@@ -18,6 +18,19 @@
         opacity: 1;
     }
 }
+
+.model_btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.readMore , .Query{
+    padding: 2rem;
+    border-radius: 10%;
+    background: var(--btnColor);
+    color: #fff;
+}
+
 .modalbody{
     width: 50rem;
     height: auto;
@@ -27,12 +40,23 @@
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     display: flex;
     padding: 2rem !important;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     border-radius: 10px;
 }
+.modalbody:hover{
+    transform: scale(.9,.9);
+   
+}
 .modelBodyImg{
+    display: flex;
+    align-self: center;
+    justify-self: center;
 width: 30rem;
 height: 30rem;
+}
+.modelDetails{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }

@@ -69,11 +69,11 @@
   top: 10%;
   right: 30%;
   z-index: 999999;
-  width: 267px;
-  padding: 20px;
+  width: 35rem;
+  padding: 2rem;
   color: #fff;
   font-family: 'Helvetica';
-  font-size: 17px;
+  font-size: 2rem;
   font-weight: 300;
   opacity: 0;
   animation: fadeIn 1s 1.5s;
@@ -140,7 +140,7 @@
 .map-wrap {
   width: 60%;
   height: 50%;
-  margin-top: 14rem;
+  margin-bottom: 2rem;
    }
    .info-map{
     display: none;
@@ -164,8 +164,6 @@
   }
  
   .name , .cont{
-    width: 91%;
+    width: 98%;
   }
- 
-
  }

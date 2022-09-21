@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import productData from "./productData";
 import "./ourProduct.css";
@@ -17,6 +17,8 @@ export default function MainFile(props) {
   const [productSearchByUser, setproductSearchByUser] = useState("");
 
   const [activeFilter, setActiveFilter] = useState("");
+
+  const [product, setproduct] = useState();
 
   // scroll-y ----------------on filter bar
 
@@ -46,15 +48,27 @@ export default function MainFile(props) {
     }
     console.log(index);
   };
+
   function toggleSearch() {
-    return setSearch((prev) => !prev);
+    setSearch((prev) => !prev);
   }
 
-  let product = currentProductToshow
-    .filter((user) =>
-      user.Machine.toLocaleLowerCase().includes(productSearchByUser)
-    )
-    .map((product) => <Card {...product} />);
+  useEffect(() => {
+    setproduct(
+      currentProductToshow
+        .filter((user) =>
+          user.Machine.toLocaleLowerCase().includes(productSearchByUser)
+        )
+        .map((product) => <Card {...product} />)
+    );
+  }, [tabChange, toggleSearch, currentProductToshow, productSearchByUser]);
+
+  useEffect(() => {
+    if (SearchbarOpen === false) {
+      setproductSearchByUser("");
+    }
+  }, [toggleSearch])
+  
 
   return (
     <div className="product-page">
@@ -63,7 +77,7 @@ export default function MainFile(props) {
           <div className="components">
             {filterItem?.map((nav, id) => {
               return (
-                <h3
+                <h2
                   className={
                     nav === activeFilter
                       ? "yesActive filter-item"
@@ -72,7 +86,7 @@ export default function MainFile(props) {
                   onClick={tabChange(nav.id, nav.text, nav)}
                 >
                   {nav.text}
-                </h3>
+                </h2>
               );
             })}
           </div>
@@ -80,7 +94,7 @@ export default function MainFile(props) {
             {SearchbarOpen ? (
               <i
                 style={{
-                  fontSize: "30px",
+                  fontSize: "3rem",
                   color: "#fff",
                   marginLeft: "1rem",
                   marginRight: "1rem",
@@ -90,7 +104,7 @@ export default function MainFile(props) {
             ) : (
               <i
                 style={{
-                  fontSize: "30px",
+                  fontSize: "3rem",
                   color: "#fff",
                   marginLeft: "1rem",
                   marginRight: "1rem",

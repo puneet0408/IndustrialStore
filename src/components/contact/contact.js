@@ -39,7 +39,6 @@ export default function Contact() {
     )
       .then(
         (result) => {
-          event.target.reset()
           console.log(result);
           if (result.text === "OK") {
             StSubmitBtn({ btnText: "submit", disabled: false });

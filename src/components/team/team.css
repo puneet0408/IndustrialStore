@@ -1,6 +1,6 @@
-.team-page{
- margin-top: 7rem;
- margin-bottom: 19rem;
+.team-page {
+  margin-top: 7rem;
+  margin-bottom: 19rem;
 }
 .team-heading {
   text-align: center;
@@ -20,12 +20,15 @@
 }
 
 .memberCard {
-  box-shadow:var(--shadow);
-  border: 1px solid rgb(169,169,169);
+  box-shadow: var(--shadow);
+  border: 1px solid rgb(169, 169, 169);
   border-radius: 0.5rem;
   height: 35rem;
   width: 24rem;
   position: relative;
+  background-color: #fff;
+  color: #000;
+  
 }
 
 .memberCard img {
@@ -33,14 +36,20 @@
   object-fit: cover;
 }
 
-.memberName{
-  font-size: large;
+.memberName {
+  font-size: medium;
+  text-align: center;
   text-transform: uppercase;
 }
 
- .memberPost{
+.memberPost {
   text-align: center;
   text-transform: capitalize;
-  color:var(--gradientSuport) ;
+  color: var(--gradientSuport);
   font-size: 2.5rem;
- }
+}
+
+.mobileNo{
+  font: 1em sans-serif;
+  text-align: center;
+}

@@ -5,9 +5,10 @@ import Logo from "../../images/LOGO.jpg";
 
 export default function Footer() {
   return (
-    <footer class="footer-distributed">
+    <footer class="Main-footer">
       <div class="footer-left">
         <img src={Logo} className="Logo" alt="logo" />
+        <h2 className="footer-company-name" >prakash India company</h2>
         <ul className="footer-links">
           <Link to="/" className="link-1">
             Home
@@ -18,7 +19,7 @@ export default function Footer() {
           <Link to="/About">About</Link>
         </ul>
       </div>
-
+ 
       <div class="footer-center">
         <div>
           <i class="fa fa-map-marker"></i>
@@ -39,10 +40,10 @@ export default function Footer() {
           </p>
         </div>
       </div>
-
+ 
       <div class="footer-right">
+      <h2 className="footer-about" >About company</h2>
         <p class="footer-company-about">
-          <span>About the company</span>
           Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
           euismod convallis velit, eu auctor lacus vehicula sit amet.
         </p>

@@ -1,27 +1,28 @@
-.slide-container{
-  background-color:rgba(0, 0, 0, 1);
+.slide-container {
+  background-color: rgba(0, 0, 0, 1);
 }
-.main{
-    height: 100vh;
-    width: 100vw;
-    display:grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
-.mainBackground{
-     position:absolute;
-top: 0; left: 0;
-right: 0;
-z-index: -1;
-height: 100%;
-width: 100vw;
-object-fit:cover;
-transition: all ease-in;
-transition-timing-function: linear;
-opacity: .9;
+.mainBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  transition: all ease-in;
+  transition-timing-function: linear;
+  opacity: 0.9;
 }
 article {
   position: absolute;
@@ -33,67 +34,70 @@ article {
   transition: var(--transition);
 }
 
- 
-
 @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  
-
-
- 
-
-.RHS-image{
-    position: relative;
-    right: 45%;
-    width: 100%;
-    animation: spin 2s infinite;
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-
-.LHS-image{
+.RHS-image {
   position: relative;
-  left: 45%; 
+  right: 45%;
   width: 100%;
-    animation: spin 2s infinite;
-   
+  animation: spin 2s infinite;
 }
 
-.Main-text{
+.LHS-image {
+  position: relative;
+  left: 45%;
+  width: 100%;
+  animation: spin 2s infinite;
+}
+
+.Main-text {
   text-align: center;
-    text-transform:capitalize;
-    color: #333;
-    font-size: 3rem;
-    margin-bottom: 15rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: rgb(239, 243, 244);
+  text-shadow: 1px 1px 1px #0e0d0d, 1px 2px 1px #080808, 1px 3px 1px #141414,
+    1px 4px 1px #151514, 1px 5px 1px rgb(18, 18, 17), 1px 6px 1px #0f0f0e,
+    1px 7px 1px #0b0b0b, 1px 8px 1px #181817, 1px 9px 1px #0f0f0e,
+    1px 10px 1px #0c0c0c, 1px 18px 6px rgba(19, 10, 10, 0.4),
+    1px 22px 10px rgba(16, 10, 10, 0.4), 1px 30px 60px rgba(18, 13, 13, 0.4);
 }
 
-
-
-h3{
-    font-family: "hetvetice Neue";
+h3 {
+  font-family: "hetvetice Neue";
 }
 
-
-
-
-
-@media(max-width:600px){
-  .main{
-    display:grid;
+@media (max-width: 600px) {
+  .main {
+    display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .LHS-image,
+  .RHS-image {
+    display: none;
+  }
+  .Main-text {
+    width: 90%;
+    margin-bottom: 15rem;
+    align-items: center;
+  }
 }
 
-    .LHS-image , .RHS-image{
-display: none;
-    }
-    .Main-text{
-        width: 90%;
-        margin-bottom: 15rem;
-        align-items: center;
-    }
-    }
+@media (max-width: 425px) {
+  .Main-text {
+    text-align: center;
+  justify-content: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #0e0d0d, 1px 2px 1px #080808, 1px 3px 1px #141414,
+    1px 4px 1px #151514;
+  }
+
+}

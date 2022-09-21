@@ -28,35 +28,30 @@
 
 
 .searchBar {
-  background-color: #555;
+  background-color:transparent;
   position: fixed;
   z-index: 11111;
   right: 0;
   top: 16.2rem;
 }
 
-.search {
-  width: 20rem;
-  height: 40px;
-  border-radius: 30px;
-  display: flex;
-  background-color: #fff;
-  margin: 2rem;
-}
+ 
 
 .yesActive{
-  color:red !important;
+  color:rgb(240, 228, 228) !important;
+  background-color:#d79d21 !important;
 }
 
 .search input {
-  width: 80%;
-  margin-left: 1rem;
-  border-radius: 30px;
-  padding-left: 1rem;
-  font-size: 20px;
-  height: 35px;
-  outline: none;
-  border: none;
+  box-shadow: inset 0 -3em 3em rgba(16, 9, 9, 0.1), 0 0 0 2px rgb(208, 198, 198),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  width: 22rem;
+  height: 5rem;
+  border-radius: 3rem;
+  display: flex;
+  background-color:transparent;
+  margin: 2rem;
+  background-color: #fff;
 }
 .ProductNav {
   display: flex;
@@ -79,9 +74,9 @@
 
 .filter-item {
   font-size: 2rem;
-  color: var(--heading);
-  box-shadow: inset 0 -3em 3em rgba(16, 9, 9, 0.1), 0 0 0 2px rgb(208, 198, 198),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  color: black;
+  /* box-shadow: inset 0 -3em 3em rgba(16, 9, 9, 0.1), 0 0 0 2px rgb(208, 198, 198),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
   border-radius: 10px;
   background-color: #fff;
   width: auto;

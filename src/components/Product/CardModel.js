@@ -9,6 +9,11 @@ function CardModel(props) {
     >
       <div className="modalbody" onClick={(e) => e.stopPropagation()}>
         <img className="modelBodyImg" src={props.cardInfo.Img} />
+        <div className="model_btn" >
+          <button className="readMore" >Read More</button>
+          <button className="Query" >ask for Qurey</button>
+        </div>
+        <div className="modelDetails" >
         <h2> {props.cardInfo.Machine} </h2>
         <p>
           {" "}
@@ -75,6 +80,7 @@ function CardModel(props) {
           <span className="heading">{props.cardInfo.SurfaceFinishing}</span>
           {props.cardInfo.SurfaceData}
         </p>
+        </div>
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ display: grid;
 
 .abouttxt{
   margin-top: 1rem;
-  font: 2rem sans-serif;
+  font-size: 2rem;
   width: 100%;
 }
 
@@ -102,4 +102,16 @@ display: grid;
     .abouttxt{
       width: 100%;
     }
+  }
+
+  @media(max-width:500px){
+    .abouttxt{
+      width: 100%;
+      font: 2rem sans-serif;
+     
+    }
+    .exp{
+      font: 2.5rem sans-serif;
+      color: black;
+     }
   }
