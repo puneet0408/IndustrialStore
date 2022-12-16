@@ -17,7 +17,7 @@ import { useState, useEffect } from "react";
   },[currentSlide,backImg])
 
   const nextSlide = () => {
-    setCurrentSlide(currentSlide === backImg.length-1 ? 0 : currentSlide + 1);
+    setCurrentSlide(currentSlide === backImg.length-1 ? 0 : prev => prev + 1);
   }
 
   useEffect(() => {
